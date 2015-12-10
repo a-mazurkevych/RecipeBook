@@ -1,6 +1,7 @@
 #files
-*Debug.mk
-*Release.mk
+*.mk
+*.bash
+*.inc
 
 #folders
 Parser/[ru]Parser/build/
