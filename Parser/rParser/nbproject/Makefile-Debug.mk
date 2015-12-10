@@ -71,37 +71,37 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/rparser.exe: ${OBJECTFILES}
 ${OBJECTDIR}/Description.o: Description.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../include -I../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Description.o Description.cpp
+	$(COMPILE.cc) -g -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Description.o Description.cpp
 
 ${OBJECTDIR}/Ingredients.o: Ingredients.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../include -I../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ingredients.o Ingredients.cpp
+	$(COMPILE.cc) -g -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ingredients.o Ingredients.cpp
 
 ${OBJECTDIR}/Parser.o: Parser.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../include -I../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Parser.o Parser.cpp
+	$(COMPILE.cc) -g -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Parser.o Parser.cpp
 
 ${OBJECTDIR}/Picture.o: Picture.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../include -I../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Picture.o Picture.cpp
+	$(COMPILE.cc) -g -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Picture.o Picture.cpp
 
 ${OBJECTDIR}/Process.o: Process.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../include -I../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Process.o Process.cpp
+	$(COMPILE.cc) -g -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Process.o Process.cpp
 
 ${OBJECTDIR}/Recipe.o: Recipe.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../include -I../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recipe.o Recipe.cpp
+	$(COMPILE.cc) -g -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recipe.o Recipe.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../include -I../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

@@ -107,7 +107,7 @@
           <standard>10</standard>
           <incDir>
             <pElem>../include</pElem>
-            <pElem>../../include</pElem>
+            <pElem>../../../include</pElem>
           </incDir>
           <commandLine>-static-libgcc -static-libstdc++</commandLine>
           <useLinkerLibraries>false</useLinkerLibraries>
@@ -118,7 +118,7 @@
           <standard>8</standard>
           <incDir>
             <pElem>../include</pElem>
-            <pElem>../../include</pElem>
+            <pElem>../../../include</pElem>
           </incDir>
           <commandLine>-static-libgcc -static-libstdc++</commandLine>
         </ccTool>
