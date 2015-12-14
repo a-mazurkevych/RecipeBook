@@ -58,7 +58,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-L../../../lib32/boost/MinGW -L../../../lib32/curl -lcurldll -lboost_date_time-mgw48-mt-1_59 -lboost_filesystem-mgw48-mt-1_59 -lboost_program_options-mgw48-mt-1_59 -lboost_regex-mgw48-mt-1_59 -lboost_system-mgw48-mt-1_59 -lboost_thread-mgw48-mt-1_59
+LDLIBSOPTIONS=-L../../../external/lib32 -lboost_atomic -lboost_date_time -lboost_filesystem -lboost_program_option -lboost_regex -lboost_system -lboost_thread -lcurl -lcurldll
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -71,37 +71,37 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/rparser.exe: ${OBJECTFILES}
 ${OBJECTDIR}/Description.o: Description.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Description.o Description.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Description.o Description.cpp
 
 ${OBJECTDIR}/Ingredients.o: Ingredients.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ingredients.o Ingredients.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ingredients.o Ingredients.cpp
 
 ${OBJECTDIR}/Parser.o: Parser.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Parser.o Parser.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Parser.o Parser.cpp
 
 ${OBJECTDIR}/Picture.o: Picture.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Picture.o Picture.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Picture.o Picture.cpp
 
 ${OBJECTDIR}/Process.o: Process.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Process.o Process.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Process.o Process.cpp
 
 ${OBJECTDIR}/Recipe.o: Recipe.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recipe.o Recipe.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recipe.o Recipe.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

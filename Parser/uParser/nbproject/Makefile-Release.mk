@@ -53,7 +53,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-L../../../lib32/boost/MinGW -L../../../lib32/curl -lboost_date_time-mgw48-mt-1_59 -lboost_filesystem-mgw48-mt-1_59 -lboost_program_options-mgw48-mt-1_59 -lboost_regex-mgw48-mt-1_59 -lboost_system-mgw48-mt-1_59 -lboost_thread-mgw48-mt-1_59 -lcurldll -lcurl
+LDLIBSOPTIONS=-L../../../external/lib32 -lboost_atomic -lboost_date_time -lboost_filesystem -lboost_program_option -lboost_regex -lboost_system -lboost_thread -lcurl -lcurldll
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -66,12 +66,12 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/uparser.exe: ${OBJECTFILES}
 ${OBJECTDIR}/Parser.o: Parser.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Parser.o Parser.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Parser.o Parser.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -s -I../include -I../../../include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -s -I../include -I../../../external/include -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

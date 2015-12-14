@@ -54,14 +54,14 @@
           <standard>10</standard>
           <incDir>
             <pElem>../include</pElem>
-            <pElem>../../../include</pElem>
+            <pElem>../../../external/include</pElem>
           </incDir>
         </cTool>
         <ccTool>
           <standard>8</standard>
           <incDir>
             <pElem>../include</pElem>
-            <pElem>../../../include</pElem>
+            <pElem>../../../external/include</pElem>
           </incDir>
           <commandLine>-static-libgcc -static-libstdc++</commandLine>
         </ccTool>
@@ -128,7 +128,7 @@
           <standard>10</standard>
           <incDir>
             <pElem>../include</pElem>
-            <pElem>../../../include</pElem>
+            <pElem>../../../external/include</pElem>
           </incDir>
         </cTool>
         <ccTool>
@@ -137,7 +137,7 @@
           <standard>8</standard>
           <incDir>
             <pElem>../include</pElem>
-            <pElem>../../../include</pElem>
+            <pElem>../../../external/include</pElem>
           </incDir>
           <commandLine>-static-libgcc -static-libstdc++</commandLine>
         </ccTool>
@@ -149,19 +149,20 @@
         </asmTool>
         <linkerTool>
           <linkerAddLib>
-            <pElem>../../../lib32/boost/MinGW</pElem>
-            <pElem>../../../lib32/curl</pElem>
+            <pElem>../../../external/lib32</pElem>
           </linkerAddLib>
           <stripSymbols>true</stripSymbols>
           <commandlineTool>g++</commandlineTool>
           <linkerLibItems>
+            <linkerLibLibItem>boost_atomic</linkerLibLibItem>
+            <linkerLibLibItem>boost_date_time</linkerLibLibItem>
+            <linkerLibLibItem>boost_filesystem</linkerLibLibItem>
+            <linkerLibLibItem>boost_program_option</linkerLibLibItem>
+            <linkerLibLibItem>boost_regex</linkerLibLibItem>
+            <linkerLibLibItem>boost_system</linkerLibLibItem>
+            <linkerLibLibItem>boost_thread</linkerLibLibItem>
+            <linkerLibLibItem>curl</linkerLibLibItem>
             <linkerLibLibItem>curldll</linkerLibLibItem>
-            <linkerLibLibItem>boost_date_time-mgw48-mt-1_59</linkerLibLibItem>
-            <linkerLibLibItem>boost_filesystem-mgw48-mt-1_59</linkerLibLibItem>
-            <linkerLibLibItem>boost_program_options-mgw48-mt-1_59</linkerLibLibItem>
-            <linkerLibLibItem>boost_regex-mgw48-mt-1_59</linkerLibLibItem>
-            <linkerLibLibItem>boost_system-mgw48-mt-1_59</linkerLibLibItem>
-            <linkerLibLibItem>boost_thread-mgw48-mt-1_59</linkerLibLibItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
